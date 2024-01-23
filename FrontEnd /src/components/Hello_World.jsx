@@ -1,4 +1,4 @@
 function Hello_World(){
-    return(<p>Hello Guyss!!</p>);
+    return(<p>Hello from Vasa</p>);
 }
 export default Hello_World
