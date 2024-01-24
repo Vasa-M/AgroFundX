@@ -19,11 +19,17 @@
     margin-top: 0px;
 }
 
-#login {
+#login1{
     border: 1px solid;
     border-color: blanchedalmond;
     box-sizing: content-box;
     margin-left:55%;
+}
+#login3{
+    border: 1px solid;
+    border-color: blanchedalmond;
+    box-sizing: content-box;
+    margin-left:0.5%;
 }
 
 #totalnav {

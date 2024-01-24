@@ -2,9 +2,12 @@ import React from "react";
 import { TextField } from "@mui/material";
 import '../assets/css/FarmerLogin.css';
 import back from "../assets/images/farmer.png";
+import ButtonAppBar from "./Navbar";
 function FarmerSignUp() {
     return ( 
         <>
+        <div>
+        <ButtonAppBar/>
    <div id="img"style={{backgroundColor:"green",backgroundImage: `url(${back})`}} data-overlay="5">
     <div>
     <div className="parent">
@@ -32,6 +35,7 @@ function FarmerSignUp() {
             </center>
             </div>  
          </div>
+    </div>
     </div>
     </div>
     </div>

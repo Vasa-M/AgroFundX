@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import '../assets/css/Navbar.css';
+import '../assets/css/Profile.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function ButtonAppBar() {
@@ -19,7 +20,7 @@ export default function ButtonAppBar() {
           <Link to = "/" id="navbar">Career</Link>
           <Link to = "/" id="navbar">Contact</Link>
           </div>
-          <Button id="login" onClick={()=>navigate("/farmerlogin")} color="inherit">Login</Button>
+          <Button id="login2" onClick={()=>navigate("/farmerlogin")} color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </Box>

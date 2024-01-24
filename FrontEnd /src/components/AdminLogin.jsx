@@ -2,8 +2,13 @@ import React from "react";
 import { TextField } from "@mui/material";
 import '../assets/css/FarmerLogin.css';
 import back from "../assets/images/admin.jpg";
+import ButtonAppBar from "./Navbar";
+import { useNavigate } from "react-router-dom";
 function FarmerLogin() {
+    const navigate = useNavigate();
     return ( <>
+    <div>
+        <ButtonAppBar/>
    <div id="img"style={{backgroundColor:"green",backgroundImage: `url(${back})`}} data-overlay="5">
     <div>
 
@@ -23,7 +28,7 @@ function FarmerLogin() {
             </div>
             <div className="but">
             <div className="but1">
-            <button className="but2">Sign in</button>
+            <button onClick={()=>navigate("/adminhome")} className="but2">Sign in</button>
             </div>
             </div>
             </center>
@@ -32,6 +37,7 @@ function FarmerLogin() {
     </div>
     </div>
    </div>
+    </div>
     </> );
 }
 

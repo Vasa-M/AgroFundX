@@ -1,60 +1,42 @@
-
-import React, { useState } from 'react';
-
+import React from 'react'
+import '../assets/css/Profile.css'
+import HomeAppBar from './HomeNavbar'
 const Profile = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   return (
     <div>
-      <h1>Dashboard</h1>
-      <form>
-        <div>
-          <label>Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Phone:</label>
-          <input
-            type="tel"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-          />
-        </div>
-      </form>
-      <div>
-        <h2>User Information</h2>
-        <p>Name: {formData.name}</p>
-        <p>Email: {formData.email}</p>
-        <p>Phone: {formData.phone}</p>
-      </div>
-    </div>
-  );
-};
+        <HomeAppBar/>
+    <div className='accountsettings'>
+      <h1 className='mainhead1'>Personal Information</h1>
 
-export default Profile;
+      <div className='form'>
+        <div className='form-group'>
+          <label htmlFor='name'>Your Name <span>*</span></label>
+          <input type='text' name='name' id='name' />
+        </div>
+
+        <div className='form-group'>
+          <label htmlFor='phone'>Phone/Mobile <span>*</span></label>
+          <input type='text' name='phone' id='phone'
+
+/>
+        </div>
+
+        <div className='form-group'>
+          <label htmlFor='email'>Email <span>*</span></label>
+          <input type='email' name='email' id='email'
+
+/>
+        </div>
+
+      
+      </div>
+
+      <button className='mainbutton1'
+        
+        >Save Changes</button>
+    </div>
+    </div>
+  )
+}
+
+export default Profile

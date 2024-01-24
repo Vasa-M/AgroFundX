@@ -1,12 +1,12 @@
 import HomeAppBar from "../components/HomeNavbar";
 
-function FarmerHome() {
+function AdminHome() {
     return ( 
         <div>
         <HomeAppBar/>
-        <h1>Farmer Loan Apply Page</h1>
+        <h1>Admin Loan Approval Page</h1>
         </div>
      );
 }
 
-export default FarmerHome;
+export default AdminHome;

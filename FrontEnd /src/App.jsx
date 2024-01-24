@@ -6,11 +6,11 @@ import FarmerLogin from "./components/FarmerLogin";
 import FarmerSignUp from "./components/FarmerSignUp";
 import AdminLogin from "./components/AdminLogin";
 import Profile from "./components/Profile";
-import HomeNavbar from "./components/HomeNavbar";
+import FarmerHome from "./pages/FarmerHome";
+import AdminHome from "./pages/AdminHome";
 function App() {
   return ( 
     <Router>
-      <HomeNavbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
@@ -18,6 +18,8 @@ function App() {
         <Route path="/farmersignup" element={<FarmerSignUp/>}/>
         <Route path="/adminlogin" element={<AdminLogin/>}/>
         <Route path="/profile" element={<Profile/>}/>
+        <Route path="/farmerhome" element={<FarmerHome/>}/>
+        <Route path="/adminhome" element={<AdminHome/>}/>
       </Routes>
     </Router>
    );

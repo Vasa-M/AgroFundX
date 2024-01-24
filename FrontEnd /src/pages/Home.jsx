@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import back from "../assets/images/paddy.jpeg";
 import '../assets/css/Navbar.css';
+import { AppBar } from '@mui/material';
+import ButtonAppBar from '../components/Navbar';
 
 function Home() {
   
@@ -11,6 +13,8 @@ function Home() {
   };
 
   return (
+    <div>
+    <ButtonAppBar/>
     <div id="img" style={{ backgroundColor: "green", backgroundImage: `url(${back})` }} data-overlay="5">
       <div id="box" style={boxStyle}>
         <div className="box1">
@@ -56,6 +60,7 @@ function Home() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
