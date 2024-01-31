@@ -52,7 +52,7 @@
 
 #img {
     position: relative;
-    background-color: green;
+    background-color: rgb(127, 246, 127);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -68,7 +68,7 @@
   .box2 {
     flex: 1;
     padding: 100px;
-    height: 300px;
+    /* height: 300px; */
     border-radius: 10px;
     background-color: rgba(209, 209, 209, 0.8); 
     margin: 2%;
@@ -83,6 +83,7 @@
     padding-bottom: 40px;
     line-height: 30px;
     text-align: center;
+    color: black !important;
   }
 #p1
 {

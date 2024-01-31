@@ -10,15 +10,15 @@ import { Link, useNavigate } from 'react-router-dom';
 export default function ButtonAppBar() {
     const navigate = useNavigate();
   return (
+    
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          
           <Link to = "/" id="header">AGRO FUNDX</Link>
           <div id="totalnav">
           <Link to = "/about" id="navbar">About</Link>
           <Link to = "/" id="navbar">Career</Link>
-          <Link to = "/" id="navbar">Contact</Link>
+          <Link to = "/contact" id="navbar">Contact</Link>
           </div>
           <Button id="login2" onClick={()=>navigate("/farmerlogin")} color="inherit">Login</Button>
         </Toolbar>

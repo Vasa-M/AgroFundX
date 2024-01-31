@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import back from "../assets/images/paddy.jpeg";
 import '../assets/css/Navbar.css';
-import { AppBar } from '@mui/material';
 import ButtonAppBar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Home() {
   
@@ -15,7 +15,9 @@ function Home() {
   return (
     <div>
     <ButtonAppBar/>
+    <div>
     <div id="img" style={{ backgroundColor: "green", backgroundImage: `url(${back})` }} data-overlay="5">
+      
       <div id="box" style={boxStyle}>
         <div className="box1">
           <div className="home">
@@ -44,7 +46,7 @@ function Home() {
             <h1 id="heading">Vision</h1>
             <marquee
               direction="up"
-              height="80px" scrollamount="3" id="heading">
+              height="80px" scrollamount="2" id="heading">
               <br></br><br></br>
               Promoting Agri-Business by encouraging institutional and private sector 
               investments and linkages to ensure the empowerment of all farmers in the country.
@@ -52,15 +54,17 @@ function Home() {
             <h1 id="heading">Mission</h1>
             <marquee
               direction="up"
-              height="50px" scrollamount="3" id="heading">
+              height="50px" scrollamount="2" id="heading">
               <br></br><br></br>
               To link small farmers to technology as well as to the markets in 
               association with private, corporate or cooperative sector and if necessary, by providing backward and forward linkages.
             </marquee>
           </div>
         </div>
+        </div>
       </div>
     </div>
+    <Footer/>
     </div>
   );
 }

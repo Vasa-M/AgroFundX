@@ -1,9 +1,9 @@
-import HomeAppBar from "../components/HomeNavbar";
+import AdminAppBar from "../components/AdminHomeNavbar";
 
 function AdminHome() {
     return ( 
         <div>
-        <HomeAppBar/>
+        <AdminAppBar/>
         <h1>Admin Loan Approval Page</h1>
         </div>
      );

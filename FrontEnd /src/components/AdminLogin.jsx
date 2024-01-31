@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TextField } from "@mui/material";
 import '../assets/css/FarmerLogin.css';
 import back from "../assets/images/admin.jpg";
 import ButtonAppBar from "./Navbar";
 import { useNavigate } from "react-router-dom";
+import { HashLoader } from "react-spinners";
 function FarmerLogin() {
     const navigate = useNavigate();
-    return ( <>
+
+    const [loading, setLoading] = useState(false);
+    useEffect(() => {
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
+    }, []);
+
+    return ( 
+    <>
+      {loading ? (<div className="flex-container">
+        <HashLoader color="#36d7b7" 
+        
+/></div>
+      ) : (
+        <>
     <div>
         <ButtonAppBar/>
    <div id="img"style={{backgroundColor:"green",backgroundImage: `url(${back})`}} data-overlay="5">
@@ -38,7 +55,7 @@ function FarmerLogin() {
     </div>
    </div>
     </div>
-    </> );
+    </> )}</>);
 }
 
 export default FarmerLogin;
