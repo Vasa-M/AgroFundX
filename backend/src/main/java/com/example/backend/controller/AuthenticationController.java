@@ -32,4 +32,9 @@ public class AuthenticationController
     {
         return ResponseEntity.ok(authenticationService.authenticate(request));
     }
+
+    @PostMapping("/loginAdmin")
+    public ResponseEntity<AuthenticationResponse> loginAdmin(@RequestBody AuthenticationRequest request) {
+        return ResponseEntity.ok(authenticationService.loginAdmin(request));
+    }
 }

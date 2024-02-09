@@ -1,5 +1,4 @@
 package com.example.backend.entity;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -16,26 +15,19 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 @Data
 @Builder
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "_user")
-public class User implements UserDetails 
-{
-    @Id
+@Table(name = "_admin")
+public class Admin  implements UserDetails{
+   @Id
     @GeneratedValue
     private Long id;
     private String name;
     private String email;
-    private String phoneNumber;
     private String password;
 
     @Enumerated(EnumType.STRING)
