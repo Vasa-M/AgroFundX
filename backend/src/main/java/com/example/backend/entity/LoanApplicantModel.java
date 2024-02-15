@@ -189,11 +189,12 @@ public class LoanApplicantModel
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private int loanId;
     private String loanType;
+    private Long trackId;
     private String applicantName;
+    private String applicantEmail;
     private String applicantAddress;
     private String applicantMobile;
-    private String applicantEmail;
-    private String applicantAadhaar;
+    private String applicantAadhar;
     private String applicantPan;
     private String applicantSalary;
     private long loanAmountRequired;

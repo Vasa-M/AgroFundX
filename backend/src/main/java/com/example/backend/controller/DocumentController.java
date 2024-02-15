@@ -15,6 +15,7 @@ import java.io.IOException;
 @SpringBootApplication
 @RestController
 @RequestMapping("/document")
+@CrossOrigin
 public class DocumentController 
 {
 	@Autowired

@@ -94,6 +94,7 @@ public class AuthenticationService {
                         .builder()
                         .name(request.getName())
                         .email(request.getEmail())
+                        .phoneNumber(request.getPhoneNumber())
                         .password(passwordEncoder.encode(request.getPassword()))
                         .role(Role.USER)
                         .build();

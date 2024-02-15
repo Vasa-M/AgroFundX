@@ -17,7 +17,7 @@ public class DocumentUtils
         byte[] tmp = new byte[4*1024];
         while (!deflater.finished()) {
             int size = deflater.deflate(tmp);
-            outputStream.write(tmp, 0, size);
+            outputStream.write(tmp,0,size);
         }
         try {
             outputStream.close();
